@@ -14,8 +14,8 @@
   the color scheme to your needs.
   
   - Background:            #fffff8
-  - Text:                  #261e66
-  - Hovered Links:         #560bed
+  - Text:                  #871a82
+  - Hovered Links:         #7d670e
   - Active Button BG:      #4509be
   - Caption BG in projects
     showcase:              rgba(38, 30, 102, .95)
@@ -119,12 +119,12 @@ footer, header, main, menu, nav, section, summary {
 
 ::-moz-selection {
   background: #71efac;
-  color: #261e66;
+  color: #871a82;
 }
 
 ::selection {
   background: #71efac;
-  color: #261e66;
+  color: #871a82;
 }
 
 /* -----  1.3 General Typography  ------------------------------------------- */
@@ -174,7 +174,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #560bed;
+  color: #7d670e;
 }
 
 /* Misc */
@@ -226,7 +226,7 @@ b, strong {
 mark {
   padding: .1em .05em;
   margin: -.1em 0;
-  color: #261e66;
+  color: #871a82;
   background: #eafded;
 }
 
@@ -368,8 +368,8 @@ h1 + .intro {
 }
 
 .btn:hover, .btn:focus {
-  background: #261e66;
-  border-color: #261e66;
+  background: #871a82;
+  border-color: #871a82;
   color: #71efac;
 }
 
@@ -447,12 +447,12 @@ h1 + .intro {
   height: 1.75rem;
   border-radius: 50%;
   background: #efeeed;
-  color: #261e66;
+  color: #871a82;
   border-bottom: 0;
 }
 
 .pagination-item:hover, .pagination-item:focus {
-  background: #261e66;
+  background: #871a82;
   color: #71efac;
 }
 
@@ -606,7 +606,7 @@ h1 + .intro {
 
 html {
   background: #fffff8;
-  color: #261e66;
+  color: #871a82;
   font: normal 400 1.5em/1.5 "Vesper Libre", Georgia, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
@@ -690,7 +690,7 @@ body {
 }
 
 .menu-item:not(:last-child)::after {
-  content: "⁄";
+  content: "*";
   display: inline-block;
   font-size: .75em;
   padding: 0 .2em;
