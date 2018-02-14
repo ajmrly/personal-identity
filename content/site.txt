@@ -1,13 +1,13 @@
-Title: Kirby Starterkit
+Title: Rosner PI
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Rev'd Dr Brian Rosner
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: Collected writings on personal identity &emdash; who we are and how we see ourselves.
 
 ----
 
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: © (date: Year) (link: http://www.ridley.edu.au text: Brian Rosner & Ridley College)
