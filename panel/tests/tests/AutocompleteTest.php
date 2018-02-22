@@ -11,22 +11,22 @@ class AutocompleteTest extends PanelTestCase {
     $this->createEditor('lisa');
     $this->createEditor('bart');
 
-    $projects = $this->site->children()->create('projects', 'projects', array(
-      'title' => 'Projects'
+    $articles = $this->site->children()->create('articles', 'articles', array(
+      'title' => 'articles'
     ));
 
-    $projects->children()->create('project-a', 'project', array(
-      'title' => 'Project A',
+    $articles->children()->create('article-a', 'article', array(
+      'title' => 'article A',
       'tags'  => 'design, photography'
     ));
 
-    $projects->children()->create('project-b', 'project', array(
-      'title' => 'Project B',
+    $articles->children()->create('article-b', 'article', array(
+      'title' => 'article B',
       'tags'  => 'photography, architecture'
     ));
 
-    $projects->children()->create('project-c', 'project', array(
-      'title' => 'Project C',
+    $articles->children()->create('article-c', 'article', array(
+      'title' => 'article C',
       'tags'  => 'architecture, illustration'
     ));
 
@@ -53,7 +53,7 @@ class AutocompleteTest extends PanelTestCase {
   public function testUris() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'uris');
-    $expected     = array('projects', 'projects/project-a', 'projects/project-b', 'projects/project-c');
+    $expected     = array('articles', 'articles/article-a', 'articles/article-b', 'articles/article-c');
 
     $this->assertEquals($autocomplete->result(), $expected);
 
@@ -62,7 +62,7 @@ class AutocompleteTest extends PanelTestCase {
   public function testFieldWithDefaults() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'field', array(
-      'uri'       => 'projects/project-a',
+      'uri'       => 'articles/article-a',
       'separator' => ','
       // default: 'field' => 'tags',
       // default: 'index' => 'siblings'
@@ -77,7 +77,7 @@ class AutocompleteTest extends PanelTestCase {
   public function testFieldWithSiblingsIndex() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'field', array(
-      'uri'       => 'projects/project-a',
+      'uri'       => 'articles/article-a',
       'separator' => ',',
       'index'     => 'siblings'
       // default: 'field' => 'tags',
@@ -92,7 +92,7 @@ class AutocompleteTest extends PanelTestCase {
   public function testFieldWithChildrenIndex() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'field', array(
-      'uri'       => 'projects',
+      'uri'       => 'articles',
       'separator' => ',',
       'index'     => 'children',
       'field'     => 'tags'
@@ -107,7 +107,7 @@ class AutocompleteTest extends PanelTestCase {
   public function testFieldWithTemplateIndex() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'field', array(
-      'uri'       => 'projects',
+      'uri'       => 'articles',
       'separator' => ',',
       'index'     => 'template',
       'field'     => 'tags'
@@ -122,12 +122,12 @@ class AutocompleteTest extends PanelTestCase {
   public function testFieldWithAllIndex() {
 
     $autocomplete = new Kirby\Panel\Autocomplete($this->panel, 'field', array(
-      'uri'       => 'projects',
+      'uri'       => 'articles',
       'index'     => 'all',
       'field'     => 'title'
     ));
 
-    $expected = array('Project A', 'Project B', 'Project C', 'Projects');
+    $expected = array('article A', 'article B', 'article C', 'articles');
 
     $this->assertEquals($autocomplete->result(), $expected);
 

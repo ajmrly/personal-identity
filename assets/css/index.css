@@ -17,7 +17,7 @@
   - Text:                  #871a82
   - Hovered Links:         #7d670e
   - Active Button BG:      #4509be
-  - Caption BG in projects
+  - Caption BG in articles
     showcase:              rgba(38, 30, 102, .95)
 
   - Highlight, Selection,
@@ -44,7 +44,7 @@
   2.2 Button
   2.3 Grid & Layout
   2.4 Pagination
-  2.5 Projects Showcase
+  2.5 articles Showcase
   
   3 Site Layout
   3.1 Header
@@ -236,6 +236,22 @@ img {
   border-style: none;
   width: 100%;
   height: auto;
+}
+
+figure.video {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+	height: 0;
+    background: #fff;
+    max-width: 872px;
+    margin-left: -5px;
+    width: 100%;
+}
+
+.video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 figcaption {
@@ -511,7 +527,7 @@ h1 + .intro {
   }
 }
 
-/* ----- 2.5 Projects Showcase ---------------------------------------------- */
+/* ----- 2.5 articles Showcase ---------------------------------------------- */
 
 .showcase {
   position: relative;
@@ -778,14 +794,14 @@ body {
 
 /* -----  4.1 Homepage  ----------------------------------------------------- */
 
-.projects-section {
+.articles-section {
   background: #eafded;
   margin-top: 3rem;
   padding-top: 2.25rem;
   padding-bottom: .75rem;
 }
 
-.projects-section-more {
+.articles-section-more {
   text-align: center;
 }
 

@@ -14,12 +14,12 @@
       <?= $page->text()->kirbytext() ?>
     </div>
   
-    <section class="projects-section">
+    <section class="articles-section">
       
       <div class="wrap wide">
-        <h2>Latest Projects</h2>
+        <h2>Latest Articles</h2>
         <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="projects-section-more"><a href="<?= page('projects')->url() ?>" class="btn">show all projects &hellip;</a></p>
+        <p class="articles-section-more"><a href="<?= page('known-by-god')->url() ?>" class="btn">show all articles &hellip;</a></p>
       </div>
       
     </section>
