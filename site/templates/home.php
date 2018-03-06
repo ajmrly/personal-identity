@@ -9,7 +9,9 @@
       </div>
       <hr />
     </header>
-
+    <div class="bannerimg">
+        <?php snippet('coverimage', $page) ?>
+    </div>
     <div class="text wrap">
       <?= $page->text()->kirbytext() ?>
     </div>

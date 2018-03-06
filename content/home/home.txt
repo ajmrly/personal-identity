@@ -17,3 +17,7 @@ Text:
 - (link: https://www.ridley.edu.au/ text: Get in contact) if you need guidance.
 
 **Have fun!**
+
+----
+
+Banner: knownbygod_cover.jpg

@@ -30,6 +30,24 @@
   - Menu Separator,
     <hr> in text:          #a8a5be
   - Blockquote BG:         #fffffd
+
+  ## Font Sizes
+  - Base unit is default font size of 16px, altered by HTML
+    font size: 1.5em = 1.5x16px = 24px computed.
+  - HTML font size =1.25em rather than 1.5em for small screens, decreases
+    all measurements proportionally.
+    All font sizes relative based on this unit, eg. H1 is 2.5rem = 60px.
+  - Significant portions of site layout also based on HTML 
+    base unit, eg. main padding-top is 3rem (root em) = 3x24px = 72px.
+
+  ## Layout
+  
+  Desktop layout wrap width is defined max-width = 36rem = 864px
+  There is another width for content boxes also defined: wrap wide, with
+  a max-width of 48rem = 1152px
+  Media query effective breakpoints are 895px and 480px
+  Small screen
+  
   
   ## Table of Contents
   
