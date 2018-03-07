@@ -31,6 +31,7 @@ if(isset($limit)) $articles = $articles->limit($limit);
           <?php endif ?>
           <div class="showcase-caption">
             <h3 class="showcase-title"><?= $article->title()->html() ?></h3>
+            <p class="showcase-excerpt"><?= $article->intro()->html() ?></p>
           </div>
         </a>
     </li>

@@ -10,6 +10,7 @@ fields:
   intro:
     label: Intro
     type:  textarea
+    width: 1/2
     
   banner:
     label: Banner

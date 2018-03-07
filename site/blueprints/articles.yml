@@ -1,6 +1,6 @@
 title: Articles
 
-files: false
+files: true
 
 pages:
   template: article
@@ -17,4 +17,4 @@ fields:
 
   text:
     label: Text
-    type:  textarea
+    type: textarea

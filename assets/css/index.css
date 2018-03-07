@@ -277,6 +277,12 @@ figcaption {
   line-height: 1.5rem;
 }
 
+.hero-image {
+  max-width: 50%;
+  object-fit: cover;
+  padding: 1rem 0;
+}
+
 /* =====  2 Layout Helpers & Reusable Components  =========================== */
 
 /* The Clearfix™: A classic … */
@@ -585,13 +591,12 @@ h1 + .intro {
   left: .75rem;
   right: .75rem;
   bottom: .75rem;
-  background: rgba(38, 30, 102, .95);
+  background: rgba(38, 30, 102, .3);
   color: #eafded;
   letter-spacing: .05em;
-  opacity: 0;
-  -webkit-transition: .25s opacity;
-  transition: .25s opacity;
-  will-change: opacity;
+  -webkit-transition: .25s background;
+  transition: .25s background;
+  will-change: background;
 }
 
 .showcase-title {
@@ -615,7 +620,7 @@ h1 + .intro {
 
 .showcase-link:hover .showcase-caption,
 .showcase-link:focus .showcase-caption {
-  opacity: 1;
+  background: rgba(38, 30, 102, .9);
 }
 
 @media (any-hover: none) {

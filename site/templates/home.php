@@ -9,22 +9,22 @@
       </div>
       <hr />
     </header>
-    <div class="bannerimg">
-        <?php snippet('coverimage', $page) ?>
-    </div>
+    <section class="articles-section">
+      
+      <div class="wrap wide">
+        <h2><a href="<?= page('known-by-god')->url() ?>" >Known by God</a></h2>
+          <?php if($image = $page->images()->sortBy('sort', 'asc')->first()): $thumb = $image->crop(600, 600); ?>
+            <img src="<?= $thumb->url() ?>" alt="Thumbnail for <?= $page->title()->html() ?>" class="hero-image" />
+          <?php endif ?>
+        <?php snippet('showcase', ['limit' => 3]) ?>
+        <p class="articles-section-more"><a href="<?= page('known-by-god')->url() ?>" class="btn">show all &hellip;</a></p>
+      </div>
+      
+    </section>
     <div class="text wrap">
       <?= $page->text()->kirbytext() ?>
     </div>
   
-    <section class="articles-section">
-      
-      <div class="wrap wide">
-        <h2>Latest Articles</h2>
-        <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="articles-section-more"><a href="<?= page('known-by-god')->url() ?>" class="btn">show all articles &hellip;</a></p>
-      </div>
-      
-    </section>
 
   </main>
 
