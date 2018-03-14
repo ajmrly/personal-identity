@@ -7,6 +7,15 @@
       <div class="intro text">
         <?= $page->text()->kirbytext() ?>
       </div>
+        <ul class="tags">
+          <?php foreach($tags as $tag): ?>
+          <li class="tag">
+            <a href="<?= url($page->url() . '/' . url::paramsToString(['tag' => $tag])) ?>">
+              <?= html($tag) ?>
+            </a>
+          </li>
+          <?php endforeach ?>
+        </ul>
       <hr />
     </header>
       

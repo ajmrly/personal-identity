@@ -31,6 +31,11 @@ fields:
   text:
     label: Text
     type: textarea
+    
+  tags:
+    label: Tags
+    type: tags
+    lower: true
 
   info:
     label: Hint

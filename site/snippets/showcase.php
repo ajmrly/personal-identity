@@ -26,12 +26,9 @@ if(isset($limit)) $articles = $articles->limit($limit);
 
     <li class="showcase-item column">
         <a href="<?= $article->url() ?>" class="showcase-link">
-          <?php if($image = $article->images()->sortBy('sort', 'asc')->first()): $thumb = $image->crop(600, 600); ?>
-            <img src="<?= $thumb->url() ?>" alt="Thumbnail for <?= $article->title()->html() ?>" class="showcase-image" />
-          <?php endif ?>
           <div class="showcase-caption">
             <h3 class="showcase-title"><?= $article->title()->html() ?></h3>
-            <p class="showcase-excerpt"><?= $article->intro()->html() ?></p>
+            <p class="showcase-excerpt">"<?= $article->text()->html()->excerpt(150) ?></p>
           </div>
         </a>
     </li>

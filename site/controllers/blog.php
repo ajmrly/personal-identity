@@ -12,12 +12,19 @@ return function($site, $pages, $page) {
   $perpage  = $page->perpage()->int();
   $articles = $page->children()
                    ->visible()
-                   ->flip()
-                   ->paginate(($perpage >= 1)? $perpage : 5);
+                   ->flip();
+ 
+  // add the tag filter
+  if($tag = param('tag')) {
+    $articles = $articles->filterBy('tags', $tag, ',');
+  }
+  // fetch all tags
+  $tags = $articles->pluck('tags', ',', false);
+  
+  // apply pagination
+  $articles   = $articles->paginate(5);
+  $pagination = $articles->pagination();
 
-  return [
-    'articles'   => $articles,
-    'pagination' => $articles->pagination()
-  ];
+  return compact('articles', 'tags', 'tag', 'pagination');
 
 };

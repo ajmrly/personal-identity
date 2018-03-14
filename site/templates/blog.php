@@ -15,8 +15,19 @@
         <div class="intro text">
           <?= $page->text()->kirbytext() ?>
         </div>
-      <?php endif ?>
-
+        <?php endif ?>
+        <?php  if($tag = param('tag')): ?>
+      <h4 class="">Filtered by tag: <?php echo param('tag'); ?></h4>
+        <?php endif ?>
+        <ul class="tags">
+          <?php foreach($tags as $tag): ?>
+          <li class="tag">
+            <a href="<?= url($page->url() . '/' . url::paramsToString(['tag' => $tag])) ?>">
+              <?= html($tag) ?>
+            </a>
+          </li>
+          <?php endforeach ?>
+        </ul>
       <hr />
     </header>
 

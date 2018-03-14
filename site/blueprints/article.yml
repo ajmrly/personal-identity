@@ -22,10 +22,15 @@ fields:
     required: true
     width: 1/2
     
-  intro:
-    label: Intro
-    type:  textarea
-  
+# intro:
+#   label: Intro
+#   type:  textarea
+#
   text:
     label: Text
     type: textarea
+    
+  tags:
+    label: Tags
+    type: tags
+    lower: true
