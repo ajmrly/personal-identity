@@ -4,64 +4,45 @@ Title: Contact
 
 Text: 
 
-## Follow the Kirby Team on Twitter
+## Get the latest updates on Personal Identity
 
-Kirby
-(twitter: @getkirby)
+Brian Rosner on Identity
+(facebook: )
 
-Bastian
-(twitter: @bastianallgeier)
-
-Nico
-(twitter: @distantnative)
-
-Sascha
-(twitter: @sashtown)
-
-Sonja
-(twitter: @texnixe)
-
-Lukas
-(twitter: @lukasbestle)
-
-Fabian
-(twitter: @fabianmichael)
 
 ----
 
-Intro: This contact page does not only contain useful resources that help you to get the most out of Kirby, but also demonstrates how to use the <mark>Structure field</mark> to create repeating content like the boxes below. If your repeating content is very complex and/or consists of more than only a few items, you can use subpages to store your data instead, like demonstrated on the (link: /about text: About page).
+Intro: Due to teaching commitments, Dr Rosner does not answer individual queries. However, if a topic seems pertinent or necessary to clarify, an article may be written addressing the issue. (link: /about text: About page).
 
 ----
 
 Contactoptions: 
 
 - 
-  title: Contact
+  title: Contact Ridley
   text: >
-    Feel free to drop us a line if you
-    have any questions.
-  url: mailto:support@getkirby.com
+    Find out more about learning at Ridley College.
+  url: https://www.ridley.edu.au/about-ridley/find-out-more/enquiry-form/
   linktext: Write an email
   icon: contact.svg
 - 
-  title: Forum
+  title: Facebook
   text: >
-    Join the Kirby community and connect
+    See the latest updates from Brian and connect
     with others.
-  url: https://forum.getkirby.com/
-  linktext: Visit Kirby’s forum
-  icon: forum.svg
+  url: https://facebook.com/
+  linktext: Visit our Facebook page.
+  icon: fb.svg
 - 
-  title: GitHub
+  title: About
   text: >
-    Report Kirby-related issues directly on
-    GitHub.
-  url: https://github.com/getkirby
-  linktext: Kirby on GitHub
-  icon: github.svg
+    Who is Rev'd Dr Brian Rosner?.
+  url: /about
+  linktext: About
+  icon: about.svg
 - 
-  title: Docs
-  text: "Check out Kirby's detailed tutorials and instructions."
-  url: https://getkirby.com/docs
-  linktext: Documentation
+  title: Buy the book
+  text: Buy Known by God
+  url: https://www.bookdepository.com/Known-by-God-Brian-S-Rosner/9780310499824
+  linktext: Book Depository
   icon: docs.svg

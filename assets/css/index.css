@@ -15,7 +15,7 @@
   
   - Background:            #fffff8
   - Text:                  #871a82
-  - Hovered Links:         #7d670e
+  - Hovered Links:         #4509bf
   - Active Button BG:      #4509be
   - Caption BG in articles
     showcase:              rgba(38, 30, 102, .95)
@@ -82,42 +82,35 @@
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
-/* Montserrat */
+/* 'Eczar' 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/montserrat-700.woff) format("woff");
+  font-family: ''Eczar'';
+  src: url(../fonts/manuale-700.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/montserrat-400.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Vesper Libre */
-@font-face {
-  font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-400.woff) format("woff");
+  font-family: ''Eczar'';
+  src: url(../fonts/manuale-400.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-500.woff) format("woff");
+  font-family: ''Eczar'';
+  src: url(../fonts/manuale-400i.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ''Eczar'';
+  src: url(../fonts/manuale-500.woff) format("woff");
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vesper Libre';
-  src: url(../fonts/vesperlibre-700.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
+} 
+*/
 
 /* -----  1.2 Reset & Normalization  ---------------------------------------- */
 
@@ -157,7 +150,7 @@ p, ul, ol, figure, pre {
 
 /* Headings */
 h1, h2, h3 {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   font-weight: 700;
 }
 
@@ -188,11 +181,12 @@ h4 {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid #71efac;
+  text-decoration: underline #71efac;
 }
 
 a:hover, a:focus, a:active {
-  color: #7d670e;
+  color: #4509bf;
+  font-weight: 800;
 }
 
 /* Misc */
@@ -237,8 +231,6 @@ h1 + hr,
 }
 
 i, em {
-  /* Vesper Libre does not have Italics,
-     so we use a the *medium* weight instead */
   font-weight: 500;
   font-style: normal;
 }
@@ -378,13 +370,13 @@ h1 + .intro {
   background: #e9e9e9;
   border-radius: 4px;
   box-shadow: 0 2px 0 #c9c7d4;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   position: relative;
   bottom: 2px;
 }
 
 .text blockquote {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   border-left: 2px solid #a8a5be;
   padding: .75rem;
   background: #fffffd;
@@ -402,7 +394,7 @@ h1 + .intro {
   padding: .6em .75em;
   white-space: nowrap;
   font-size: .75em;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   line-height: 1;
   font-weight: 400;
 }
@@ -488,7 +480,7 @@ h1 + .intro {
   border-radius: 50%;
   background: #efeeed;
   color: #871a82;
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .pagination-item:hover, .pagination-item:focus {
@@ -601,7 +593,7 @@ h1 + .intro {
   justify-content: center;
   position: relative;
   z-index: 0;
-  border-bottom: 0;
+  text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   
@@ -678,7 +670,7 @@ h1 + .intro {
 html {
   background: #fffff8;
   color: #871a82;
-  font: normal 400 1.5em/1.5 "Vesper Libre", Georgia, serif;
+  font: normal 400 1.5em/1.5 'Eczar', Georgia, Times, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -718,9 +710,13 @@ body {
   padding-top: 0.2rem;
 }
 
+.stickyHeader {
+  padding-top: 0.5rem;
+}
+
 .branding {
   text-align: center;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.95rem;
@@ -728,7 +724,7 @@ body {
 }
 
 .branding a {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 @media all and (min-width: 56em) {
@@ -769,11 +765,11 @@ body {
 }
 
 .menu-item a {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .menu-item.is-active a {
-  border-bottom: 2px solid #71efac;
+  text-decoration: underline #71efac;
 }
 
 @media all and (min-width: 56em) {
@@ -813,13 +809,13 @@ body {
 }
 
 .footer a {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .footer .heart {
   /* The heart character of Arial Unicode MS looks just 
      surprisingly nice … */
-  font-family: "Arial Unicode MS", Arial, sans-serif;
+  font-family: "Arial Unicode MS", Arial, serif;
   display: inline-block;
 }
 
@@ -868,7 +864,7 @@ body {
 }
 
 .article-title a {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .article-date {
@@ -883,7 +879,7 @@ body {
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', Georgia, Times, serif;
   letter-spacing: .025em;
   white-space: nowrap;
   border-bottom: 2px solid #71efac;
@@ -918,13 +914,13 @@ body {
 
 @media all and (min-width: 30em) {
   .team-item {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media all and (min-width: 62.5em) {
   .team-item {
-    width: 25%;
+    width: 100%;
   }
 }
 

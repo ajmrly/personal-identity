@@ -7,8 +7,13 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
-
+  <?php echo js('assets/scripts/main.js') ?>
   <?= css('assets/css/index.css') ?>
+  <!-- custom css -->    
+  <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
+  <?php echo css($css->url()) ?>
+  <?php endforeach ?>
+  <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,800" rel="stylesheet">
 
 </head>
 <body>

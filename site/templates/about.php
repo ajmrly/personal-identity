@@ -5,7 +5,7 @@
     <div class="wrap">
       
       <header>
-        <h1><?= $page->title()->html() ?></h1>
+        <h1>Purpose</h1>
         <div class="intro text">
           <?= $page->intro()->kirbytext() ?>
         </div>
@@ -18,9 +18,9 @@
       
     </div>
     
-    <section class="team wrap wide">
+    <section class="team wrap">
       
-      <h2>People</h2>
+      <h2><?= $page->title()->html() ?></h2>
 
       <ul class="team-list grid gutter-1">
         <?php foreach($page->children()->visible() as $member): ?>
