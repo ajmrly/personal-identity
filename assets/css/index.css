@@ -710,6 +710,10 @@ body {
   padding-top: 0.2rem;
 }
 
+.headerGrid {
+  
+}
+
 .stickyHeader {
   padding-top: 0.5rem;
 }
@@ -720,6 +724,7 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.95rem;
+  word-spacing: 10000px;
   margin-bottom: .45rem;
 }
 
@@ -735,8 +740,8 @@ body {
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
-    white-space: nowrap;
-    text-align: left;
+/*    white-space: nowrap;
+    text-align: left;   */
   }
   .branding,
   .navigation {
