@@ -1,0 +1,48 @@
+Title: Contact
+
+----
+
+Text: 
+
+## Get the latest updates on Personal Identity
+
+Brian Rosner on Identity
+(facebook: )
+
+
+----
+
+Intro: Due to teaching commitments, Dr Rosner does not answer individual queries. However, if a topic seems pertinent or necessary to clarify, an article may be written addressing the issue. (link: /about text: About page).
+
+----
+
+Contactoptions: 
+
+- 
+  title: Contact Ridley
+  text: >
+    Find out more about learning at Ridley College.
+  url: https://www.ridley.edu.au/about-ridley/find-out-more/enquiry-form/
+  linktext: Write an email
+  icon: contact.svg
+- 
+  title: Facebook
+  text: >
+    See the latest updates from Brian and connect
+    with others.
+  url: https://facebook.com/
+  linktext: Visit our Facebook page.
+  icon: fb.svg
+- 
+  title: About
+  text: >
+    Who is Rev'd Dr Brian Rosner?.
+  url: /about
+  linktext: About
+  icon: about.svg
+- 
+  title: Buy the book
+  text: Buy Known by God
+  url: https://www.bookdepository.com/Known-by-God-Brian-S-Rosner/9780310499824
+  linktext: Book Depository
+  icon: docs.svg

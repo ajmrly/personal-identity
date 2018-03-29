@@ -18,7 +18,7 @@
             <img src="<?= $thumb->url() ?>" alt="Thumbnail for <?= $page->title()->html() ?>" class="hero-image hero-item column" />
           <?php endif ?>
           <div class="column hero-item">
-              <h2 class="left-align"><a href="<?= page('known-by-god')->url() ?>" >Known by God</a></h2>
+              <h2 class="left-align"><a href="" >Known by God</a></h2>
               <h3>A Biblical Theology of Personal&nbsp;Identity</h3>
               <ul class="">
                 <li><a href="">Read an excerpt</a></li>

@@ -740,8 +740,8 @@ body {
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
-/*    white-space: nowrap;
-    text-align: left;   */
+    white-space: nowrap;
+    text-align: left;
   }
   .branding,
   .navigation {
