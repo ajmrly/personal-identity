@@ -1,6 +1,6 @@
 <?php
 
-$articles = page('known-by-god')->children()->visible();
+$articles = page()->children()->visible();
 
 /*
 

@@ -28,7 +28,7 @@
           </div>
         </div>
         <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="articles-section-more"><a href="<?= page('known-by-god')->url() ?>" class="btn">show all &hellip;</a></p>
+        <p class="articles-section-more"><a href="<?= $page->children()->first() ?>" class="btn">show all &hellip;</a></p>
       </div>
       
     </section>

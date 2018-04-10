@@ -723,13 +723,18 @@ body {
   font-family: 'Eczar', Georgia, Times, serif;
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 1.95rem;
+  line-height: 1.5rem;
   word-spacing: 10000px;
   margin-bottom: .45rem;
 }
 
 .branding a {
   text-decoration: none;
+}
+
+.rosner:hover {
+  border: 2px solid;
+  padding: .6em .75em;
 }
 
 @media all and (min-width: 56em) {
@@ -740,7 +745,7 @@ body {
   .branding {
     line-height: 3rem;
     margin-bottom: 0;
-    white-space: nowrap;
+/*    white-space: nowrap; // effectively controls whether site branding sits on one line or multiple*/
     text-align: left;
   }
   .branding,

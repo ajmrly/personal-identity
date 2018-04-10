@@ -1,4 +1,4 @@
-Title: Rosner on Identity
+Title: on Identity
 
 ----
 
@@ -11,3 +11,7 @@ Description: Collected writings on personal identity &emdash; who we are and how
 ----
 
 Copyright: © (date: Year) (link: http://www.ridley.edu.au text: Brian Rosner & Ridley College)
+
+----
+
+Rosner: Rosner

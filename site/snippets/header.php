@@ -7,8 +7,8 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
-  <?php echo js('assets/' . server::get('server_name') . '/scripts/main.js') ?>
-  <?= css('assets/' . server::get('server_name') . '/css/index.css') ?>
+  <?php echo js('assets/scripts/main.js') ?>
+  <?= css('assets/css/index.css') ?>
   <!-- custom css -->    
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
   <?php echo css($css->url()) ?>
@@ -20,11 +20,10 @@
 
   <header class="header wrap wide" role="banner">
     <div class="headerGrid grid">
-
       <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
+        <a href="http://rosner.ajm.im/" rel="home" class="rosner"><?=$site->rosner()->html() ?></a>
+        <a href="<?= url() ?>" rel="home" class="siteTitle"><?= $site->title()->html() ?></a>
       </div>
-
       <?php snippet('menu') ?>
 
     </div>
