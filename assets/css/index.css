@@ -186,10 +186,9 @@ a {
 
 a:hover, a:focus, a:active {
   color: #4509bf;
-  font-weight: 800;
 }
 
-/* Misc */
+/* Misc */ 
 hr {
   font-size: 1.25rem;
   font-weight: 500;
@@ -198,6 +197,7 @@ hr {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   color: #71efac;
+  z-index: -1;
 }
 
 hr::before {
@@ -227,7 +227,7 @@ h1 + hr,
 .tags + hr {
   /* Shift a <hr> right after an `.intro`
      or <h1> block one line up. */
-  margin-top: -0.8rem;
+  margin-top: -0.3rem;
 }
 
 i, em {
@@ -725,7 +725,11 @@ body {
   font-size: 1.5rem;
   line-height: 1.5rem;
   word-spacing: 10000px;
+  word-spacing: 10000px;
   margin-bottom: .45rem;
+  max-height: 6.5rem;
+  max-width: 7rem;
+  border: 3px solid  #4509be;
 }
 
 .branding a {
@@ -733,24 +737,23 @@ body {
 }
 
 .rosner:hover {
-  border: 2px solid;
-  padding: .6em .75em;
+
 }
 
 @media all and (min-width: 56em) {
   .header {
     padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
   .branding {
-    line-height: 3rem;
+    line-height: 2rem;
     margin-bottom: 0;
 /*    white-space: nowrap; // effectively controls whether site branding sits on one line or multiple*/
-    text-align: left;
   }
+  
   .branding,
   .navigation {
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 50%;
   }
 }
@@ -784,7 +787,8 @@ body {
 
 @media all and (min-width: 56em) {
   .menu {
-    text-align: right;
+    text-align: left;
+    padding-left: 1rem;
   }
 }
 

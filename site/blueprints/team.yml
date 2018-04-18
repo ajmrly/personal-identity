@@ -14,20 +14,3 @@ fields:
   position:
     label: Position
     type: text
-    required: true
-
-  about:
-    label: About
-    type: textarea
-
-  phone:
-    label: Phone Number
-    type: tel
-    required: true
-    width: 1/2
-
-  email:
-    label: Email Address
-    type: email
-    required: true
-    width: 1/2

@@ -17,7 +17,7 @@
         </div>
         <?php endif ?>
         <?php  if($tag = param('tag')): ?>
-      <h4 class="">Filtered by tag: <?php echo param('tag'); ?></h4>
+      <h3 class=""><?php echo param('tag'); ?></h3>
         <?php endif ?>
         <ul class="tags">
           <?php foreach($tags as $tag): ?>
