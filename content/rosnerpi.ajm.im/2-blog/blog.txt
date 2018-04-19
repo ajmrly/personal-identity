@@ -2,7 +2,7 @@ Title: Blog
 
 ----
 
-Text: Talks and articles from Brian Rosner.
+Text: Talks and articles from Brian Rosner on identity, ranging from recent to ancient.
 
 ----
 
