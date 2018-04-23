@@ -21,7 +21,7 @@
   <header class="header wrap wide" role="banner">
     <div class="headerGrid grid">
       <div class="branding column">
-        <a href="http://rosner.ajm.im/" rel="home" class="rosner"><?=$site->rosner()->html() ?></a>
+        <a href="http://brian.rosner.id.au/" rel="home" class="rosner"><?=$site->rosner()->html() ?></a>
         <a href="<?= url() ?>" rel="home" class="siteTitle"><?= $site->title()->html() ?></a>
       </div>
       <?php snippet('menu') ?>

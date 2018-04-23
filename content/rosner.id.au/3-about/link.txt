@@ -1,4 +1,4 @@
 Title: About
 ----
-Link: http://rosner.ajm.im/about
+Link: http://brian.rosner.id.au/about
 ----

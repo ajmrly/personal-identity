@@ -4,7 +4,7 @@
 
 $kirby   = kirby();
 $domain  = server::get('server_name');
-$domains = array('rosner.ajm.im', 'rosnerpi.ajm.im');
+$domains = array('rosner.id.au', 'brian.rosner.id.au');
 
 if(in_array($domain, $domains)) {
 
