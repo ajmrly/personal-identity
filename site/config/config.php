@@ -20,9 +20,9 @@ c::set('debug',true);
 c::set('simplemde.buttons', array(
   "bold",
   "italic",
-  "h2,
+  "h2,"
   "h3",
-  "unordered-list,
+  "unordered-list",
   "ordered-list",
   "quote",
   "horizontal-rule",
