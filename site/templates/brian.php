@@ -11,7 +11,6 @@
     </header>
     <section class="articles-section">
       
-        <?php snippet('herobook') ?>
         <?php snippet('showcase', ['limit' => 3]) ?>
         <p class="articles-section-more"><a href="<?= $page->children()->first() ?>" class="btn">show all &hellip;</a></p>
       
