@@ -28,7 +28,9 @@ fields:
 #
   text:
     label: Text
-    type: textarea
+    type: simplemde
+      buttons:
+    - quote
     
   tags:
     label: Tags
