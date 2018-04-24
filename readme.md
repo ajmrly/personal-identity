@@ -1,3 +1,7 @@
+# Rosner ID
+
+This site has been created using Kirby and is heavily based upon both the Kirby StarterKit and the methods described in the Kirby cookbook.
+
 # Kirby
 
 Kirby is a file-based CMS.
