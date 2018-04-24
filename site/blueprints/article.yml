@@ -29,8 +29,6 @@ fields:
   text:
     label: Text
     type: simplemde
-      buttons:
-    - quote
     
   tags:
     label: Tags
