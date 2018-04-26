@@ -14,7 +14,8 @@
   the color scheme to your needs.
   
   - Background:            #fffff8
-  - Text:                  #871a82
+  - Heading Text:          #871a82
+  - Body text:             #260620
   - Hovered Links:         #4509bf
   - Active Button BG:      #4509be
   - Caption BG in articles
@@ -152,6 +153,7 @@ p, ul, ol, figure, pre {
 h1, h2, h3 {
   font-family: 'Eczar', Georgia, Times, serif;
   font-weight: 700;
+  color: #871a82;
 }
 
 h1 {
@@ -669,7 +671,7 @@ h1 + .intro {
 
 html {
   background: #fffff8;
-  color: #871a82;
+  color: #260620;
   font: normal 400 1.25em/1.25 'Eczar', Georgia, Times, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
