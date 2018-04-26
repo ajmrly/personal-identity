@@ -169,12 +169,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /* Links */
@@ -670,7 +670,7 @@ h1 + .intro {
 html {
   background: #fffff8;
   color: #871a82;
-  font: normal 400 1.5em/1.5 'Eczar', Georgia, Times, serif;
+  font: normal 400 1.25em/1.25 'Eczar', Georgia, Times, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */

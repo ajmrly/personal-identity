@@ -1,3 +1,4 @@
 Title: Talks
 ----
-Link: http://brian.rosner.id.au/blog/tag:talk----
+Link: http://brian.rosner.id.au/blog/tag:talk
+----
