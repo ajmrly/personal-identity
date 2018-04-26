@@ -557,6 +557,11 @@ h1 + .intro {
   position: relative;
 }
 
+.hero {
+  width: 100%;
+  background: #71efac;
+}
+
 .hero-item {
   max-height: 600px;
   object-fit: contain;
@@ -710,6 +715,7 @@ body {
 /* ----- 3.1  Header  ------------------------------------------------------- */
 
 .header {
+  color: 871a82;
   padding-top: 0.2rem;
 }
 
