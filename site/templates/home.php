@@ -9,11 +9,12 @@
       </div>
       <hr />
     </header>
+    <?php snippet('herobook') ?>
+    
     <section class="articles-section wrap wide">
       
-        <?php snippet('herobook') ?>
         <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="articles-section-more"><a href="<?= $page->children()->first() ?>" class="btn">show all &hellip;</a></p>
+        <p class="articles-section-more"><a href="<?= $page->children('blog')?>" class="btn">show all &hellip;</a></p>
       
     </section>
 
