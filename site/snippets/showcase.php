@@ -1,6 +1,6 @@
 <?php
 
-$articles = page(blog)->children()->visible();
+$articles = page('blog')->children()->visible();
 
 /*
 
