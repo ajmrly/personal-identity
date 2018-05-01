@@ -1,0 +1,25 @@
+title: Articles
+
+files: true
+
+pages:
+  template: article
+
+options: 
+  template: false  
+  status: false  
+  url: false  
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text:
+    label: Text
+    type: textarea
+    
+  tags:
+    label: Tags
+    type: tags
+    lower: true

@@ -1,0 +1,22 @@
+title: Home
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  textarea
+    width: 1/2
+    
+  banner:
+    label: Banner
+    type:  image
+    width: 1/2
+
+  text:
+    label: Text
+    type:  textarea

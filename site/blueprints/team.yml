@@ -1,0 +1,16 @@
+title: Team Member
+
+pages: false
+
+icon: user
+
+preview: parent
+
+fields:
+  title:
+    label: Name
+    type: title
+
+  position:
+    label: Position
+    type: text
